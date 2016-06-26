@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OutLineActivity"
+    tools:ignore="NestedWeights" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tv_titlebar" >
+
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:layout_width="@dimen/width_normal"
+            android:layout_height="@dimen/height_small"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/tv_title_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_small"
+            android:gravity="center"
+            android:text="@string/tv_title"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/text_xlarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ib"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:id="@+id/ll_online_ib"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_zero"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+        <ImageButton
+            android:id="@+id/ib_busline_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/ib_busline_search" />
+        
+        <ImageButton
+            android:id="@+id/ib_transfer_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/ib_transfer_search" />
+</LinearLayout>
+        <ImageButton
+            android:id="@+id/ib_search_outline"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_zero"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/ib_search_outline" />
+    </LinearLayout>
+
+</LinearLayout>

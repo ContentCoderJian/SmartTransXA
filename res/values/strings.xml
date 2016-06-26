@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">畅行西安</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="tv_title">畅行西安</string>
+    <string name="rb_tab_menu_station">站点</string>
+    <string name="rb_tab_menu_route">线路</string>
+    <string name="rb_tab_menu_transfer">换乘</string>
+    <string name="rb_tab_meun_more">更多</string>
+    <string name="tv_station_title">离线站点查询</string>
+    <string name="et_station_search">请输入站点</string>
+    <string name="btn_search">搜索</string>
+    <string name="tv_route">离线线路查询</string>
+    <string name="et_route_search">请输入公交线路</string>
+    <string name="btn_route_search_opposite">下行搜索</string>
+    <string name="btn_route_search">上行搜索</string>
+    <string name="tv_title_transfer">离线换乘查询</string>
+    <string name="et_transfer_start">输入起始站</string>
+    <string name="et_transfer_end">输入终点站</string>
+    <string name="tv_title_online_transfer">在线换乘查询</string>
+    <string name="tv_title_busline_online">公交在线查询</string>
+    <string name="rb_timefirst">最少时间</string>
+    <string name="rb_walkfirst">最少步行</string>
+    <string name="rb_nosubway">不坐地铁</string>
+    <string name="rb_transferfirst">最少换乘</string>
+
+</resources>

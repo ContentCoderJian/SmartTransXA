@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tv_titlebar">#519DEB</color>
+    <color name="bg_line">#D57296</color>
+    <color name="rg_background">#ffffff</color>
+    <color name="bg_station">#F1F1F1</color>
+    <color name="bg_more">#F4F4F4</color>
+
+    <!-- text -->
+    <color name="text_tab_menu_unselected">#999999</color>
+    <color name="text_tab_menu_selected">#6A9CBB</color>
+    <color name="text">#265982</color>
+    <color name="text_title">#EFF3F7</color>
+    <color name="text_menu_title">#E61A5F</color>
+    
+</resources>

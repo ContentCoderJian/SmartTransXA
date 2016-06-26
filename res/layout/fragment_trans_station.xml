@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_station"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        android:layout_marginBottom="8dp"
+        android:background="@color/tv_titlebar"
+        android:gravity="center"
+        android:text="@string/tv_station_title"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/text_large" />
+
+    <RelativeLayout
+        android:id="@+id/rl_station_et"
+        android:layout_width="@dimen/width_xlarge"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_edittext"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <EditText
+            android:id="@+id/et_station"
+            android:layout_width="@dimen/width_large"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/bg_station"
+            android:hint="@string/et_station_search"
+            android:paddingBottom="6dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="6dp"
+            android:textSize="@dimen/text_large" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_station_search"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="@dimen/height_btn"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_selector"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/btn_search" />
+
+    <RelativeLayout
+        android:id="@+id/rl_station_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_main" >
+
+        <ListView
+            android:id="@+id/lv_station"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

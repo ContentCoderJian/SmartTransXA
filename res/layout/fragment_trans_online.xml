@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tv_titlebar" >
+
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:layout_width="@dimen/width_normal"
+            android:layout_height="@dimen/height_small"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/tv_title_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_small"
+            android:gravity="center"
+            android:text="@string/tv_title"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/text_xlarge" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/contentFrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/console_line_bottom"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_normal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/rg_background"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rg_tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rg_background"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_tab_menu_timefirst"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_transfer_selector"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="5dp"
+                android:text="@string/rb_timefirst"
+                android:textColor="@drawable/tab_menu_colors_selector"
+                android:textSize="@dimen/text_small" />
+
+            <RadioButton
+                android:id="@+id/rb_tab_menu_transferfirst"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_transfer_selector"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="5dp"
+                android:text="@string/rb_transferfirst"
+                android:textColor="@drawable/tab_menu_colors_selector"
+                android:textSize="@dimen/text_small" />
+
+            <RadioButton
+                android:id="@+id/rb_tab_menu_walkfirst"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_transfer_selector"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="5dp"
+                android:text="@string/rb_walkfirst"
+                android:textColor="@drawable/tab_menu_colors_selector"
+                android:textSize="@dimen/text_small" />
+
+            <RadioButton
+                android:id="@+id/rb_tab_menu_nosubway"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_transfer_selector"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="5dp"
+                android:text="@string/rb_nosubway"
+                android:textColor="@drawable/tab_menu_colors_selector"
+                android:textSize="@dimen/text_small" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

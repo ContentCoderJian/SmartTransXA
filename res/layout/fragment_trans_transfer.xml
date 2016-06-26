@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_station"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded" >
+
+    <TextView
+        android:id="@+id/tv_title_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        android:layout_marginBottom="8dp"
+        android:background="@color/tv_titlebar"
+        android:gravity="center"
+        android:text="@string/tv_title_transfer"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/text_large" />
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/ll_transer_iv_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_transfer_start"
+            android:layout_width="@dimen/width_ic_station"
+            android:layout_height="@dimen/height_ic_station"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_start_station" />
+
+        <ImageView
+            android:id="@+id/iv_transfer_end"
+            android:layout_width="@dimen/width_ic_station"
+            android:layout_height="@dimen/height_ic_station"
+            android:layout_below="@+id/iv_transfer_start"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_end_station" />
+
+        <RelativeLayout
+            android:id="@+id/rl_transfer_et"
+            android:layout_width="@dimen/width_xlarge"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/iv_transfer_end"
+            android:background="@drawable/bg_edittext"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp" >
+
+            <EditText
+                android:id="@+id/et_transfer_start"
+                android:layout_width="@dimen/width_large"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/bg_station"
+                android:hint="@string/et_transfer_start"
+                android:paddingBottom="6dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingTop="6dp"
+                android:textSize="@dimen/text_large" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_transfer_end"
+                android:layout_width="@dimen/width_large"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_transfer_start"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/bg_station"
+                android:hint="@string/et_transfer_end"
+                android:paddingBottom="6dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingTop="6dp"
+                android:textSize="@dimen/text_large" >
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_transfer_search"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="@dimen/height_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/button_selector"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/btn_search" />
+
+    <RelativeLayout
+        android:id="@+id/rl_transfer_search1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_main" >
+
+        <ListView
+            android:id="@+id/lv_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>
